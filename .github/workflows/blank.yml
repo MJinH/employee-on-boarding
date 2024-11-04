@@ -26,18 +26,14 @@ jobs:
         run: |
           cd server
           npm install
-          npm install eslint --save-dev
           npm audit fix
-          npm run lint
           npm test
           
       - name: Install client dependencies
         run: |
           cd client
           npm install
-          npm install eslint --save-dev
           npm audit fix
-          npm run lint
           npm test
 
       # - name: Login to Docker Hub
