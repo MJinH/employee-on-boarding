@@ -26,6 +26,7 @@ jobs:
         run: |
           cd server
           npm install
+          npm install eslint --save-dev
           npm audit fix
           npm run lint
           npm test
@@ -34,6 +35,7 @@ jobs:
         run: |
           cd client
           npm install
+          npm install eslint --save-dev
           npm audit fix
           npm run lint
           npm test
