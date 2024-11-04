@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "build": "cd client && yarn && yarn build"
+    "build": "cd client && yarn && yarn build",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
